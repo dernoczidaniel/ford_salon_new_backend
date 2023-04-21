@@ -102,7 +102,7 @@ const Ford = {
         })
     },
     getOrders(req,res){
-        let sql= 'SELECT * FROM users';
+        let sql= 'SELECT * FROM orders';
         connection.query(sql, (err,data) => {
             if (err){
                 res.status(500).send({

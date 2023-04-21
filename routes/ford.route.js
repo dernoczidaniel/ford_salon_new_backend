@@ -10,6 +10,8 @@ module.exports = (app) =>{
     router.get('/ford/getPayment',ford.getPayment)
     router.get('/ford/getSalons',ford.getSalons)
     router.get('/ford/getUsers',ford.getUsers)
+    router.get('/ford/getOrders',ford.getOrders)
+
 
     // router.post('/login',auth.login);
     
