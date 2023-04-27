@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../config/db');
+const bodyParser = require('body-parser');
+const mysql = require('mysql');
+
 
 router.post('/orders', (req, res) => {
   const orderData = req.body;

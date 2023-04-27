@@ -52,8 +52,11 @@ app.use(session({
 // Az útválasztók beállítása
 const authRouter = require('./routes/auth');
 const usersRouter = require('./routes/user');
+const orderRouter = require('./routes/order');
 app.use('/', authRouter);
 app.use('/', usersRouter);
+app.use('/', orderRouter);
+
 
 // //Bejelenkezés
 // app.post('/api/login', (req, res) => {
