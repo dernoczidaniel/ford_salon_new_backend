@@ -1,8 +1,6 @@
 const connection = require('../config/db.js');
-// https://jwt.io/
 const jsonwebtoken = require('jsonwebtoken');
 
-// https://randomstr.com/
 const JWT_SECRET = "OZabmrF5aS9AkQ0Dl8tBMkOKUo2csoPiBDdem0PkxQbZxC9A5J2OVBtTHdRuQ7MIwPy9IT0dhDe5J2WjHWPA19aezGmf2IYWFljh";
 
 const Blog ={

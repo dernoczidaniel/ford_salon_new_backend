@@ -35,15 +35,12 @@ router.post('/login', (req, res) => {
 
             bcrypt.compare(password, user.password, (error, result) => {
                 if (result === true) {
-                    // Generate a JWT token
                     const token = jwt.sign({ userId: user.id }, 'secret_key');
 
-                    // Get user details from the database
                     const userDetailsQuery = 'SELECT name, email, telefon, city, postalcode, address FROM users WHERE id = ?';
                     connection.query(userDetailsQuery, [user.id], (error, userDetailsResults) => {
                         if (error) throw error;
 
-                        // Send the token and user details in the response
                         res.json({ message: 'Login successful', token: token, user: userDetailsResults[0] });
                     });
                 } else {

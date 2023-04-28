@@ -1,9 +1,5 @@
 const connection = require('../config/db');
-// https://jwt.io/
-// const jsonwebtoken = require('jsonwebtoken');
 
-// // https://randomstr.com/
-// const JWT_SECRET = "OZabmrF5aS9AkQ0Dl8tBMkOKUo2csoPiBDdem0PkxQbZxC9A5J2OVBtTHdRuQ7MIwPy9IT0dhDe5J2WjHWPA19aezGmf2IYWFljh";
 
 
 
@@ -117,32 +113,6 @@ const Ford = {
 
 }
 
-// const Auth = {
-//     login(req,res){
-//         //console.log('ok',req.body.email,req.body.password);
-//         const sql = 'select * from users where email = ? and password = md5(?)';
-//         connection.query(sql,[req.body.email,req.body.password],(err,data)=>{
-//             if (err){
-//                 res.status(500).send({message: err.message})
-//             } else {
-//                 //console.log(data);
-//                 if (data.length != 0){
-//                     return res.json({
-//                         token: jsonwebtoken.sign({
-//                             email: data[0].email,
-//                             name: data[0].name,
-//                             role: data[0].role
-//                         },JWT_SECRET)
-//                     })
-//                 } else {
-//                     return res.status(401).send({message: 'Unauthorized'});
-//                 }
-//             }
-//         })
 
-//     }
-// }
-
-// module.exports = Auth;
 
 module.exports = Ford;
