@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "5592214a-1db4-4774-ac26-aa58778fdd45",
+		"name": "Ford_salon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26448110"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/api/ford/getCars",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"ford",
+						"getCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Models",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/api/ford/getModels",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"ford",
+						"getModels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/api/ford/getUsers",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"ford",
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/api/ford/getExtras",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"ford",
+						"getExtras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/api/ford/getPayment",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"ford",
+						"getPayment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/api/ford/getSalons",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"ford",
+						"getSalons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "asd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "igen",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/login",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Daniel",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "igen",
+							"type": "text"
+						},
+						{
+							"key": "postalcode",
+							"value": "8600",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "ablak u 34",
+							"type": "text"
+						},
+						{
+							"key": "telefon",
+							"value": "07838264",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "pápa",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "2023.02.31",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://weary-tick-miniskirt.cyclic.app/register",
+					"protocol": "https",
+					"host": [
+						"weary-tick-miniskirt",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
